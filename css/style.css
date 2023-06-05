@@ -7,21 +7,17 @@ html {
     box-sizing: inherit;
 } */
 
-
 h1 {
     font-size: 3em;
-    line-height: 1.2em;
-    margin-top: 105px;
+    line-height: 1em;
+    margin-top: 70px;
 }
-
-
 
 .wrapper {
     display: grid;
     justify-content: center;
-    grid-template-columns: 600px 400px;
-    grid-template-rows: 300px 300px 350px 300px;
-    
+    grid-template-columns: 560px 360px;
+    grid-template-rows: 300px 300px 300px 300px;
 }
 
 .container {
@@ -43,7 +39,7 @@ h1 {
 }
 
 .logoBox {
-    margin: 0px 0px 0px -380px;
+    margin-left: -320px;
 }
 .withBackground {
     position: relative;
@@ -53,18 +49,18 @@ h1 {
     content: " ";
     position: absolute;
     z-index: -1;
-    width: 750px;
-    height: 600px;
-    background-image: url("../img/SoFoCoDemsLogo.png");
+    width: 610px;
+    height: 410px;
+    background-image: url(../img/SoFoCoDemsLogo.png);
     background-repeat: no-repeat;
-    background-size: 800px 500px;
+    background-size: 650px 410px;
 }
 
 /* -------  COLUMNS ------------ */
 
 .col-1 {
     grid-row-start: span 3;
-    margin-top: 0px;
+    margin-top: -20px;
     /* border: red dashed 2px; */
 }
 
@@ -76,26 +72,39 @@ h1 {
 
 .col-2 {
     /* border: orange dashed 2px; */
-    margin-top: 200px;
+    margin-top: 150px;
     grid-row-start: span 2;
 }
 
 .aside {
     border: black solid 1.5px;
-    width: 525px;
-    height: 250px;
+    width: 460px;
+    height: 220px;
     position: relative;
-    left: -200px;
-    padding: 20px 10px 15px 20px;
-    display: flex;
-    flex-direction: column;
+    left: -180px;
+    padding: 10px 10px 25px 15px;
 }
 
 .aside h3{
-    font-size: 21px;
-    margin-top: 0px;
-    margin-bottom: 8px;
+    font-size: 20px;
+    margin: 0px 0px 6px 10px;
 }
+
+.aside p {
+    margin: 2px auto 2px auto;
+}
+
+.precinct {
+    margin: 0px auto;
+}
+
+.listserv {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2px;
+}
+
+
 
 /* -------  CONTACT TABLE ------------ */
 
@@ -104,7 +113,7 @@ table {
 }
 
 td {
-    padding-top: 8px;
+    padding-top: 6px;
     padding-bottom: 8px;
 }
 th {
@@ -133,3 +142,50 @@ td.title.school {
     padding-bottom: 0px;
 }
 
+
+/* -------  OFFICIALS ------------ */
+
+.wrapper-officials {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1000px;
+    margin-top: 10px;
+}
+
+em.light {
+    font-weight: 200;
+}
+/* -------  OFFICIALS TABLE ------------ */
+
+td.title.office {
+    width: 360px;
+    vertical-align: top;
+}
+
+td.info.office {
+    padding-left: 40px;
+}
+
+td.info.office p{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+
+/* -------  FOOTER ------------ */
+
+.footer {
+    display: grid;
+    margin: 5px auto 30px;
+    justify-items: center;
+}
+
+.footer p {
+    display: flex;
+    margin: 1px 0px 1px;
+}
+
+.footer p:nth-child(2) {
+    font-size: .9em;
+    padding-bottom: 3px;
+}
