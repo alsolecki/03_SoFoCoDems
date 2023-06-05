@@ -1,0 +1,135 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+/* *, *::before, *::after {
+    box-sizing: inherit;
+} */
+
+
+h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+    margin-top: 105px;
+}
+
+
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 600px 400px;
+    grid-template-rows: 300px 300px 350px 300px;
+    
+}
+
+.container {
+    /* border: lime dashed 2px; */
+    padding: 10px;
+    margin: 10px;
+}
+
+.header {
+    text-align: end;
+
+}
+
+
+/* -------  LOGO ------------ */
+
+.logo {
+    border: none;
+}
+
+.logoBox {
+    margin: 0px 0px 0px -380px;
+}
+.withBackground {
+    position: relative;
+    background-color: transparent;
+}
+.withBackground::before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    width: 750px;
+    height: 600px;
+    background-image: url("../img/SoFoCoDemsLogo.png");
+    background-repeat: no-repeat;
+    background-size: 800px 500px;
+}
+
+/* -------  COLUMNS ------------ */
+
+.col-1 {
+    grid-row-start: span 3;
+    margin-top: 0px;
+    /* border: red dashed 2px; */
+}
+
+.col-1 h2 {
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.col-2 {
+    /* border: orange dashed 2px; */
+    margin-top: 200px;
+    grid-row-start: span 2;
+}
+
+.aside {
+    border: black solid 1.5px;
+    width: 525px;
+    height: 250px;
+    position: relative;
+    left: -200px;
+    padding: 20px 10px 15px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside h3{
+    font-size: 21px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+/* -------  CONTACT TABLE ------------ */
+
+table {
+    table-layout: fixed;
+}
+
+td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+th {
+    font-size: 32px;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 16px;
+    padding-top: 8px;
+}
+
+td.title {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    width: 180px;
+}
+
+td.info {
+    text-align: left;
+    padding-left: 10px;
+}
+
+td.title.school {
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+
